@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextColour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter new colour" />
+
+    <EditText
+        android:id="@+id/editTextIndex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter position number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonAddItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnAddColour"
+            android:textColor="#000000"
+            app:backgroundTint="#CCCACA" />
+
+        <Button
+            android:id="@+id/buttonRemoveItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnRemoveColour"
+            android:textColor="#000000"
+            app:backgroundTint="#CCCACA"/>
+
+        <Button
+            android:id="@+id/buttonUpdateItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnUpdateColour"
+            android:textColor="#000000"
+            app:backgroundTint="#CCCACA"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewColour"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
